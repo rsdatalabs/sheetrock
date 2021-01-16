@@ -98,7 +98,8 @@
 
           <script class="example-render" data-language="javascript">
             // Define spreadsheet URL.
-            var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1qT1LyvoAcb0HTsi2rHBltBVpUBumAUzT__rhMvrz5Rk/edit#gid=0';
+           // var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1qT1LyvoAcb0HTsi2rHBltBVpUBumAUzT__rhMvrz5Rk/edit#gid=0';
+             var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1yCqPtGEOZaY_RW4sV3vjUIx7wh_huuvTnbNh2zf0N3s/edit#gid=0';
           </script>
 
 
@@ -143,7 +144,8 @@
               // Load top ten switch hitters.
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select A,B,C,D,E,L where E = 'Both' order by L desc",
+                //query: "select A,B,C,D,E,L where E = 'Both' order by L desc",
+                query: "select A,B,C,D where C = 'Dengue' order by B desc",
                 fetchSize: 10
               });
             </script>
@@ -189,7 +191,8 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                query: "select A,C,D,I order by I desc",
+                //query: "select A,C,D,I order by I desc",
+                query: "select A,C,D,E order by E desc",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
               });
@@ -224,7 +227,8 @@
               // Load top five team RBI leaders.
               $('#team-rbi').sheetrock({
                 url: mySpreadsheet,
-                query: "select A,sum(J) group by A order by sum(J) desc",
+                //query: "select A,sum(J) group by A order by sum(J) desc",
+                query: "select A,count(F) group by A order by count(F) desc",
                 fetchSize: 5,
                 labels: ['TeamName', 'TeamRBI'],
                 rowTemplate: RBITemplate
