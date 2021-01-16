@@ -228,7 +228,7 @@
               $('#team-rbi').sheetrock({
                 url: mySpreadsheet,
                 //query: "select A,sum(J) group by A order by sum(J) desc",
-                query: "select A,count(F) group by A order by count(F) desc",
+                query: "select C,count(F) group by C order by count(F) desc",
                 fetchSize: 5,
                 labels: ['TeamName', 'TeamRBI'],
                 rowTemplate: RBITemplate
