@@ -72,19 +72,12 @@
               });
             </script>
           </div>
-
-          <p class="fiddle">
-            <a href="https://jsfiddle.net/7krs6q0q/">Show a jsFiddle for this example.</a>
-          </p>
-
-
+          
          <div class="example-render-group">
-
             <div class="example-render" data-language="markup" data-example-class="operator-plus">
               <!-- Load Handlebars.js from CloudFlare’s CDN. -->
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
             </div>
-
             <div class="example-render output" data-language="markup" data-example-class="operator-plus">
               <h4>Latest Feeds</h4>
               <ol id="hr">
@@ -104,7 +97,6 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                //query: "select A,C,D,I order by I desc",
                 query: "select A,C,D,E order by E desc",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
@@ -112,11 +104,6 @@
             </script>
 
           </div>
-
-          <p class="fiddle">
-            <a href="https://jsfiddle.net/09sknz54/">Show a jsFiddle for this example.</a>
-          </p>
-
 
           <h3 id="grouping">Grouping</h3>
 
