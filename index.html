@@ -17,55 +17,11 @@
 
     <div class="container">
 
-    <!--  <div class="row">
-
-        <div class="col-md-3 hidden-xs hidden-sm">
-
-          <nav id="toc" class="affix">
-            <ul class="nav">
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#documentation">Documentation</a></li>
-              <li><a href="#usage">Usage</a></li>
-              <li class="nested"><a href="#expectations">Expectations</a></li>
-              <li><a href="#examples">Examples</a></li>
-              <li class="nested"><a href="#hello-world">Hello, world!</a></li>
-              <li class="nested"><a href="#basic">Basic example</a></li>
-              <li class="nested"><a href="#templating">Templating</a></li>
-              <li class="nested"><a href="#grouping">Grouping</a></li>
-              <li><a href="#credits">Credits</a></li>
-            </ul>
-          </nav>
-
-        </div>
--->
         <div class="col-md-9">
 
           <h1 id="about">Infectious Disease Stats & Latest Updates From Major Indian Districts</h1>
 
           <noscript><p class="error">This page requires JavaScript.</p></noscript>
-
-          <p><strong>ID Stats</strong> is a portal for view latest infectious disease information from social media updates. It currently displays information on Covid19, Malaria, Dengue and Bird Flu </p>
-
-         <p>Sheetrock can be used in the browser or on the server (Node.js). It has no dependencies—but if jQuery is available, it will register as a plugin.</p>
-
-          <p>Basic retrieval is a snap but you can also:</p>
-
-          <ul>
-            <li>Query sheets using the SQL-like <a href="https://developers.google.com/chart/interactive/docs/querylanguage">Google Visualization query language</a>—grouping, sorting, filters, pivots, and more</li>
-           <li>Lazy-load large data sets (infinite scroll with ease)</li>
-            <li>Easily mix in your favorite templating system (<a href="http://handlebarsjs.com">Handlebars</a>, <a href="http://underscorejs.org">Underscore</a>, etc.)</li>
-            <li>Customize to your heart’s content with your own callbacks</li>
-          </ul>
-
-
-          <h2 id="documentation">Documentation and development</h2>
-
-          <p>Please see the <a href="https://github.com/chriszarate/sheetrock">GitHub repository</a> for detailed documentation of the available options or to contribute, explore, or raise an issue.</p>
-
-
-          <h2 id="usage">Usage</h2>
-
-          <p>Grab the <a href="https://chriszarate.github.io/sheetrock/dist/sheetrock.min.js">latest version of Sheetrock</a> for your project. The examples on this page use jQuery, but Sheetrock doesn’t require it.</p>
 
           <div class="example-render" data-language="markup">
             <!-- Load jQuery and Sheetrock from CDNJS -->
@@ -73,29 +29,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
           </div>
           
-         <p>Sheetrock can also be used with Node.js; <a href="https://github.com/chriszarate/sheetrock">see the documentation</a> for details.</p>
-
-          <h3 id="expectations">Expectations</h3>
-
-          <p>Sheetrock is designed to work with any Google Sheet, but makes some assumptions about the format and availability.</p>
-          <ul>
-            <li><strong>Public.</strong> In order for others to access the data in your Sheet with Sheetrock, the Sheet must be public. (<a href="https://support.google.com/drive/answer/2494822">How do I make a spreadsheet public?</a>)</li>
-            <li><strong>One header row.</strong> Sheetrock expects a single header row of column labels in the first row of the Sheet.</li>
-            <li><strong>Plain text.</strong> Sheetrock doesn’t handle formatted text. Any formatting you’ve applied to your data—including hyperlinks—probably won’t show up.</li>
-          </ul>
-
-
-          <h2 id="examples">Examples</h2>
-
-          <p>These are real, live examples. View source! Extend and adapt them!</p>
-
-          <h3>Specify a spreadsheet.</h3>
-
-          <p>Sheetrock’s only required option is the URL of a <a href="https://support.google.com/drive/answer/2494822">public Google Spreadsheet</a>. (Click “Share” and set visibility to “Anyone with the link” or “Public on the web.”) As an example, let’s use <a href="https://docs.google.com/spreadsheet/ccc?key=0AlRp2ieP7izLdGFNOERTZW0xLVpROFc3X3FJQ2tSb2c#gid=0">this spreadsheet</a>, which contains 1986 National League batting statistics.</p>
-
-          <p>Make sure you include the <code class="inline">#gid=X</code> portion of the URL; it identifies the specific worksheet you want to use.</p>
-
-           
+         
           <script class="example-render" data-language="javascript">
             // Define spreadsheet URL.
            // var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1qT1LyvoAcb0HTsi2rHBltBVpUBumAUzT__rhMvrz5Rk/edit#gid=0';
