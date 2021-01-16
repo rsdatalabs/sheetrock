@@ -67,14 +67,14 @@
           <h2 id="usage">Usage</h2>
 
           <p>Grab the <a href="https://chriszarate.github.io/sheetrock/dist/sheetrock.min.js">latest version of Sheetrock</a> for your project. The examples on this page use jQuery, but Sheetrock doesn’t require it.</p>
-
+-->
           <div class="example-render" data-language="markup">
             <!-- Load jQuery and Sheetrock from CDNJS -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
           </div>
 
-          <p>Sheetrock can also be used with Node.js; <a href="https://github.com/chriszarate/sheetrock">see the documentation</a> for details.</p>
+   <!--       <p>Sheetrock can also be used with Node.js; <a href="https://github.com/chriszarate/sheetrock">see the documentation</a> for details.</p>
 
           <h3 id="expectations">Expectations</h3>
 
@@ -95,14 +95,14 @@
           <p>Sheetrock’s only required option is the URL of a <a href="https://support.google.com/drive/answer/2494822">public Google Spreadsheet</a>. (Click “Share” and set visibility to “Anyone with the link” or “Public on the web.”) As an example, let’s use <a href="https://docs.google.com/spreadsheet/ccc?key=0AlRp2ieP7izLdGFNOERTZW0xLVpROFc3X3FJQ2tSb2c#gid=0">this spreadsheet</a>, which contains 1986 National League batting statistics.</p>
 
           <p>Make sure you include the <code class="inline">#gid=X</code> portion of the URL; it identifies the specific worksheet you want to use.</p>
-
+-->
           <script class="example-render" data-language="javascript">
             // Define spreadsheet URL.
            // var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1qT1LyvoAcb0HTsi2rHBltBVpUBumAUzT__rhMvrz5Rk/edit#gid=0';
              var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1yCqPtGEOZaY_RW4sV3vjUIx7wh_huuvTnbNh2zf0N3s/edit#gid=0';
           </script>
 
-
+<!--
           <h3 id="hello-world">Hello, world!</h3>
 
           <p>The most basic use case of Sheetrock simply fetches the an entire worksheet and loads it into a <code class="inline">&lt;table&gt;</code>.</p>
@@ -113,7 +113,7 @@
               <table id="statistics" class="table table-condensed table-striped"></table>
             </code></pre>
           </div>
-
+-->
           <pre class="language-javascript"><code class="mockup">
             // Load an entire worksheet.
             $('#statistics').sheetrock({
@@ -121,12 +121,12 @@
             });
           </code></pre>
 
-          <p class="fiddle">
+   <!--       <p class="fiddle">
             <a href="https://jsfiddle.net/p1kxjwgq/">Show a jsFiddle for this example.</a>
           </p>
 
           <p>However, that’s not very exciting, so we won’t show the result inline here—especially since the spreadsheet has a couple hundred rows.</p>
-
+-->
 
           <h3 id="basic">Basic example</h3>
 
