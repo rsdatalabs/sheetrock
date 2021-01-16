@@ -36,7 +36,7 @@
            </div>
 
           <div class="example-render-group">
-            <div class="example-render output" data-language="markup" data-example-class="operator-plus">
+            <div data-language="markup" data-example-class="operator-plus">
               <h4>Disease Intensity</h4>
               <ol id="team-rbi">
               <script id="team-rbi-template" type="text/x-handlebars-template">
@@ -44,7 +44,7 @@
               </script>
               </ol>
             </div>
-            <script data-language="javascript" data-example-class="operator-equals">
+            <script class="example-render" data-language="javascript" data-example-class="operator-equals">
               var RBITemplate = Handlebars.compile($('#team-rbi-template').html());
              $('#team-rbi').sheetrock({
                 url: mySpreadsheet,
