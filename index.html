@@ -21,18 +21,14 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
          </div>
          <script data-language="javascript">
-            // Define spreadsheet URL.
-           // var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1qT1LyvoAcb0HTsi2rHBltBVpUBumAUzT__rhMvrz5Rk/edit#gid=0';
              var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1yCqPtGEOZaY_RW4sV3vjUIx7wh_huuvTnbNh2zf0N3s/edit#gid=0';
           </script>
 
-          <!-- We’re not actually running this code, so it’s mocked up. -->
           <div class="operator-plus" style="display:none">
             <pre class="language-markup"><code class="mockup">
               <table id="statistics" class="table table-condensed table-striped"></table>
             </code></pre>
             <pre class="language-javascript"><code class="mockup">
-            // Load an entire worksheet.
             $('#statistics').sheetrock({
               url: mySpreadsheet
              });
@@ -48,7 +44,6 @@
               </script>
               </ol>
             </div>
-
             <script data-language="javascript" data-example-class="operator-equals">
               var RBITemplate = Handlebars.compile($('#team-rbi-template').html());
              $('#team-rbi').sheetrock({
@@ -59,39 +54,25 @@
                 rowTemplate: RBITemplate
               });
             </script>
-
           </div>
           
           <div class="example-render-group">
-
             <div class="example-render output" data-language="markup" data-example-class="operator-plus">
               <table id="switch-hitters" class="table table-condensed table-striped"></table>
             </div>
-
-            <script class="example-render" data-language="javascript" data-example-class="operator-equals">
-              // Load top ten switch hitters.
+            <script data-language="javascript" data-example-class="operator-equals">
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                //query: "select A,B,C,D,E,L where E = 'Both' order by L desc",
                 query: "select C,B,F,E,D where C = 'Dengue' order by B desc",
                 fetchSize: 10
               });
             </script>
-
           </div>
 
-          <p class="fiddle">
-            <a href="https://jsfiddle.net/7krs6q0q/">Show a jsFiddle for this example.</a>
-          </p>
-
-
          <div class="example-render-group">
-
             <div class="example-render" data-language="markup" data-example-class="operator-plus">
-              <!-- Load Handlebars.js from CloudFlare’s CDN. -->
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
             </div>
-
             <div class="example-render output" data-language="markup" data-example-class="operator-plus">
               <h4>Latest Feeds</h4>
               <ol id="hr">
