@@ -37,10 +37,7 @@
           </script>
 
 
-          <h3 id="hello-world">Hello, world!</h3>
-
-          <p>The most basic use case of Sheetrock simply fetches the an entire worksheet and loads it into a <code class="inline">&lt;table&gt;</code>.</p>
-
+          
           <!-- We’re not actually running this code, so it’s mocked up. -->
           <div class="operator-plus">
             <pre class="language-markup"><code class="mockup">
@@ -59,15 +56,7 @@
             <a href="https://jsfiddle.net/p1kxjwgq/">Show a jsFiddle for this example.</a>
           </p>
 
-          <p>However, that’s not very exciting, so we won’t show the result inline here—especially since the spreadsheet has a couple hundred rows.</p>
-
-
-          <h3 id="basic">Basic example</h3>
-
-          <p>Let’s move on to something slightly more interesting. Using Sheetrock, we can limit our scope and analyze the data using SQL-like queries. We can also provide a <code class="inline">fetchSize</code> to load just a portion of the data. We can always grab more data later—Sheetrock <strong>keeps track of how many rows you’ve requested</strong> and the next request will pick up where you left off.</p>
-
-          <p>Let’s look at switch hitters and rank them by batting average. We’ll only grab the columns we care about and fetch just the top ten to help focus the reader’s attention.</p>
-
+          
           <div class="example-render-group">
 
             <div class="example-render output" data-language="markup" data-example-class="operator-plus">
