@@ -2,59 +2,44 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css" rel="stylesheet" type="text/css">
     <link href="./css/sheetrock.css" rel="stylesheet" type="text/css">
     <title>ID Stats</title>
-
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-
     <div class="container">
-
         <div class="col-md-9">
-
           <h1 id="about">Infectious Disease Stats & Latest Updates From Major Indian Districts</h1>
-
           <noscript><p class="ermmror">This page requires JavaScript.</p></noscript>
-
           <div data-language="javascript" style="display:none">
             <!-- Load jQuery and Sheetrock from CDNJS -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-          </div>
-          
-         
-          <script data-language="javascript">
+         </div>
+         <script data-language="javascript">
             // Define spreadsheet URL.
            // var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1qT1LyvoAcb0HTsi2rHBltBVpUBumAUzT__rhMvrz5Rk/edit#gid=0';
              var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1yCqPtGEOZaY_RW4sV3vjUIx7wh_huuvTnbNh2zf0N3s/edit#gid=0';
           </script>
 
-
-          
           <!-- We’re not actually running this code, so it’s mocked up. -->
           <div class="operator-plus" style="display:none">
             <pre class="language-markup"><code class="mockup">
               <table id="statistics" class="table table-condensed table-striped"></table>
             </code></pre>
-         
-          <pre class="language-javascript"><code class="mockup">
+            <pre class="language-javascript"><code class="mockup">
             // Load an entire worksheet.
             $('#statistics').sheetrock({
               url: mySpreadsheet
-            });
-          </code></pre>
- </div>
+             });
+            </code></pre>
+           </div>
 
-          
           <div class="example-render-group">
-
             <div data-language="markup" data-example-class="operator-plus">
               <h4>Disease Intensity</h4>
               <ol id="team-rbi">
@@ -64,10 +49,9 @@
               </ol>
             </div>
 
-            <script class="example-render" data-language="javascript" data-example-class="operator-equals">
+            <script data-language="javascript" data-example-class="operator-equals">
               var RBITemplate = Handlebars.compile($('#team-rbi-template').html());
-
-              $('#team-rbi').sheetrock({
+             $('#team-rbi').sheetrock({
                 url: mySpreadsheet,
                 query: "select C,count(F) group by C order by count(F) desc",
                 fetchSize: 5,
