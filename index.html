@@ -59,21 +59,17 @@
           </div>
           
           <div class="example-render-group">
-
-            <div class="example-render output" data-language="markup" data-example-class="operator-plus">
+            <div data-language="markup" data-example-class="operator-plus">
               <table id="switch-hitters" class="table table-condensed table-striped"></table>
             </div>
-
-            <script class="example-render" data-language="javascript" data-example-class="operator-equals">
+            <script data-language="javascript" data-example-class="operator-equals">
               // Load top ten switch hitters.
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                //query: "select A,B,C,D,E,L where E = 'Both' order by L desc",
                 query: "select C,B,F,E,D where C = 'Dengue' order by B desc",
                 fetchSize: 10
               });
             </script>
-
           </div>
 
           <p class="fiddle">
