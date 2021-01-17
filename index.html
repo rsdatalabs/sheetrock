@@ -91,7 +91,7 @@
           </div>
           
          <div class="example-render-group">
-            <div class="example-render" data-language="markup" data-example-class="operator-plus">
+            <div data-language="markup" data-example-class="operator-plus" >
               <!-- Load Handlebars.js from CloudFlare’s CDN. -->
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
             </div>
@@ -105,11 +105,9 @@
                 </script>
               </ol>
             </div>
-
             <script class="example-render" data-language="javascript" data-example-class="operator-equals">
               // Compile the Handlebars template for HR leaders.
               var HRTemplate = Handlebars.compile($('#hr-template').html());
-
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
@@ -118,7 +116,6 @@
                 rowTemplate: HRTemplate
               });
             </script>
-
           </div>
 
           <div class="example-render-group" style="display:none">
@@ -130,11 +127,9 @@
               </script>
               </ol>
             </div>
-
             <script class="example-render" data-language="javascript" data-example-class="operator-equals">
               // Compile Handlebars template for team RBI leaders.
               var RBITemplate = Handlebars.compile($('#team-rbi-template').html());
-
               // Load top five team RBI leaders.
               $('#team-rbi').sheetrock({
                 url: mySpreadsheet,
@@ -145,13 +140,9 @@
                 rowTemplate: RBITemplate
               });
             </script>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
 
