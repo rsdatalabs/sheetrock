@@ -63,7 +63,7 @@
               <h4>Location Intensity</h4>
               <ol id="team-rbi2">
               <script id="team-rbi-template2" type="text/x-handlebars-template">
-                <li><strong>{{cells.TeamName}}</strong>, {{cells.TeamRBI}}</li>
+                <li><strong>{{cells.TeamName2}}</strong>, {{cells.TeamRBI}}</li>
               </script>
               </ol>
             </div>
@@ -73,7 +73,7 @@
                 url: mySpreadsheet,
                 query: "select B,count(F) group by B order by count(F) desc",
                 fetchSize: 5,
-                labels: ['TeamName', 'Location Intensity'],
+                labels: ['TeamName2', 'Location Intensity'],
                 rowTemplate: RBITemplate2
               });
             </script>
