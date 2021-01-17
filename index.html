@@ -58,7 +58,7 @@
 
           </div>
           
-          <p>Search for areas with corona and other communicable diseases.</p>
+          <h4>Search for areas with corona and other communicable diseases.</h4>
             <form id="form1" onchange="drawChart()">
             <select id="thedropdown">
             <option value="0">Choose Communicable Disease:</option>
@@ -93,14 +93,13 @@
             <div data-language="markup" data-example-class="operator-plus">
               <h4>Latest Feeds</h4>
               <table id="switch-hitters" class="table table-condensed table-striped"></table>
-              
             </div>
             <script data-language="javascript" data-example-class="operator-equals">
               selection = document.getElementById("thedropdown").value;
               // Load top ten switch hitters.
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D where C = selection order by B desc",
+                query: "select C,B,F,E,D where C = 'Dengue' order by B desc",
                 fetchSize: 10
               });
             </script>
@@ -130,7 +129,7 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                query: "select A,C,D,E order by E desc",
+                query: "select A,C,D,E where E contains 'vaccine' order by E desc",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
               });
