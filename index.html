@@ -72,25 +72,8 @@
             </script>
 
           </div>
-          
-                    
+
           <div class="example-render-group">
-            <div data-language="markup" data-example-class="operator-plus">
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-              <h4>Latest Government Updates</h4>
-              <table id="switch-hitters" class="table table-condensed table-striped"></table>
-            </div>
-            <script data-language="javascript" data-example-class="operator-equals">
-              // Load top ten switch hitters.
-              $('#switch-hitters').sheetrock({
-                url: mySpreadsheet,
-                query: "select C,B,F,E,D where F like '%ICMR%' order by B desc",
-                fetchSize: 10
-              });
-            </script>
-          </div>
-          
-         <div class="example-render-group">
             <div data-language="markup" data-example-class="operator-plus" >
               <!-- Load Handlebars.js from CloudFlare’s CDN. -->
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
@@ -117,6 +100,25 @@
               });
             </script>
           </div>
+
+          
+                    
+          <div class="example-render-group">
+            <div data-language="markup" data-example-class="operator-plus">
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+              <h4>Latest Government Updates</h4>
+              <table id="switch-hitters" class="table table-condensed table-striped"></table>
+            </div>
+            <script data-language="javascript" data-example-class="operator-equals">
+              // Load top ten switch hitters.
+              $('#switch-hitters').sheetrock({
+                url: mySpreadsheet,
+                query: "select C,B,F,E,D where F like '%ICMR%' order by B desc",
+                fetchSize: 10
+              });
+            </script>
+          </div>
+          
 
           <div class="example-render-group" style="display:none">
             <div data-language="markup" data-example-class="operator-plus">
