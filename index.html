@@ -14,6 +14,7 @@
     <div class="container">
         <div class="col-md-9">
           <h1 id="about">Infectious Disease Stats & Latest Updates From Major Indian Districts</h1>
+          <p>This is an information portal that is compiled from latest social media messages on infectious diseases. At this time, feeds are from twitter.</p>
           <noscript><p class="ermmror">This page requires JavaScript.</p></noscript>
           <div data-language="javascript" style="display:none">
             <!-- Load jQuery and Sheetrock from CDNJS -->
@@ -38,7 +39,8 @@
           
           <div class="example-render-group">
             <div data-language="markup" data-example-class="operator-plus">
-              <h4>Disease Intensity</h4>
+              <h4>Section A: Disease Intensity</h4>
+              <p>A summary of message activity for difference diseases, that show current intensity. </p>
               <ol id="team-rbi">
               <script id="team-rbi-template" type="text/x-handlebars-template">
                 <li><strong>{{cells.TeamName}}</strong>, {{cells.TeamRBI}}</li>
@@ -60,7 +62,8 @@
             <div class="example-render-group">
             <div data-language="markup" data-example-class="operator-plus">
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-              <h4>Location Intensity</h4>
+              <h4>Section B: Location Intensity</h4>
+              <p>A summary of message activity for difference locations, that show current intensity. </p>
               <table id="location-counts" class="table table-condensed table-striped"></table>
             </div>
             <script data-language="javascript" data-example-class="operator-equals">
@@ -80,7 +83,8 @@
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
             </div>
             <div data-language="markup" data-example-class="operator-plus">
-              <h4>Latest Vaccine Related Feeds</h4>
+              <h4>Section C: Latest Vaccine Related Feeds</h4>
+              <p>A feed of latest updates on vaccination. </p>
               <ol id="hr">
                 <script id="hr-template" type="text/x-handlebars-template">
                   <li>
@@ -107,7 +111,8 @@
           <div class="example-render-group">
             <div data-language="markup" data-example-class="operator-plus">
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-              <h4>Latest Government Updates</h4>
+              <h4>Section D: Latest Government Updates</h4>
+              <p>A feed of latest disease updates from government bodies such as ICMR. </p>
               <table id="switch-hitters" class="table table-condensed table-striped"></table>
             </div>
             <script data-language="javascript" data-example-class="operator-equals">
@@ -123,7 +128,8 @@
         <div class="example-render-group">
             <div data-language="markup" data-example-class="operator-plus">
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-              <h4>Latest Media Updates</h4>
+              <h4>Section E: Latest Media Updates</h4>
+              <p>A feed of latest disease updates from media groups such as Times Of India. </p>
               <table id="media-hitters" class="table table-condensed table-striped"></table>
             </div>
             <script data-language="javascript" data-example-class="operator-equals">
