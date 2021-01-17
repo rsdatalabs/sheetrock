@@ -69,7 +69,7 @@
               // Load top ten switch hitters.
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D where C = 'Dengue' order by B desc",
+                query: "select C,B,F,E,D where C like '%Deng%' order by B desc",
                 fetchSize: 10
               });
             </script>
