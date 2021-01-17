@@ -107,8 +107,7 @@
               <ol id="hr">
                 <script id="hr-template" type="text/x-handlebars-template">
                   <li>
-                    <strong>{{cells.First}} {{cells.Last}}</strong>,
-                    {{cells.Team}}, {{cells.HR}}
+                  <strong>{{cells.City}}</strong> {{cells.Disease}}, {{cells.By}}, {{cells.Date}}
                   </li>
                 </script>
               </ol>
@@ -121,7 +120,7 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                query: "select B,C,D,E order by B desc",
+                query: "select B,C,D,E order by D desc",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
               });
