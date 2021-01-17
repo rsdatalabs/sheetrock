@@ -61,6 +61,28 @@
           
           <div class="example-render-group">
             <div data-language="markup" data-example-class="operator-plus">
+              <h4>Location Intensity</h4>
+              <ol id="team-rbi2">
+              <script id="team-rbi2-template" type="text/x-handlebars-template">
+                <li><strong>{{cells.TeamName2}}</strong>, {{cells.TeamRBI2}}</li>
+              </script>
+              </ol>
+            </div>
+            <script data-language="javascript" data-example-class="operator-equals">
+              var RBI2Template = Handlebars.compile($('#team-rbi2-template').html());
+              $('#team-rbi2').sheetrock({
+                url: mySpreadsheet,
+                query: "select C,count(F) group by C order by count(F) desc",
+                fetchSize: 5,
+                labels: ['TeamName2', 'Location Intensity'],
+                rowTemplate: RBI2Template
+              });
+            </script>
+
+          </div>
+          
+          <div class="example-render-group">
+            <div data-language="markup" data-example-class="operator-plus">
               <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
               <h4>Latest Feeds</h4>
               <table id="switch-hitters" class="table table-condensed table-striped"></table>
