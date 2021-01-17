@@ -58,30 +58,10 @@
 
           </div>
           
-           <div class="example-render-group">
-            <div data-language="markup" data-example-class="operator-plus">
-              <h4>Location Intensity</h4>
-              <ol id="team-rbi2">
-              <script id="team-rbi-template2" type="text/x-handlebars-template">
-                <li><strong>{{cells.TeamName}}</strong>, {{cells.TeamRBI}}</li>
-              </script>
-              </ol>
-            </div>
-            <script data-language="javascript" data-example-class="operator-equals">
-              var RBITemplate2 = Handlebars.compile($('#team-rbi-template2').html());
-              $('#team-rbi2').sheetrock({
-                url: mySpreadsheet,
-                query: "select B,count(F) group by B order by count(F) desc",
-                fetchSize: 5,
-                labels: ['TeamName', 'Location Intensity'],
-                rowTemplate: RBITemplate2
-              });
-            </script>
-
-          </div>
           
           <div class="example-render-group">
             <div data-language="markup" data-example-class="operator-plus">
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
               <h4>Latest Feeds</h4>
               <table id="switch-hitters" class="table table-condensed table-striped"></table>
             </div>
@@ -119,7 +99,7 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                query: "select A,C,D,E order by E desc",
+                query: "select B,C,D,E order by C desc",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
               });
@@ -248,11 +228,6 @@
 
     </script>
 
-    <div class="github">
-      <a href="https://github.com/chriszarate/sheetrock"><img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-    </div>
-
   </body>
 
 </html>
-© 2021 GitHub, Inc.
