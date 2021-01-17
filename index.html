@@ -72,7 +72,7 @@
               var RBI2Template = Handlebars.compile($('#team-rbi2-template').html());
               $('#team-rbi2').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,count(F) group by C order by count(F) desc",
+                query: "select B,count(F) group by B order by count(F) desc",
                 fetchSize: 5,
                 labels: ['TeamName2', 'Location Intensity'],
                 rowTemplate: RBI2Template
@@ -121,7 +121,7 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                query: "select B,C,D,E order by C desc",
+                query: "select B,C,D,E order by B desc",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
               });
