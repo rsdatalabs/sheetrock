@@ -113,7 +113,7 @@
               // Load top ten switch hitters.
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D where F like '%ICMR%' order by B desc",
+                query: "select C,B,F,E,D where E like '%ICMR%' order by B desc",
                 fetchSize: 10
               });
             </script>
