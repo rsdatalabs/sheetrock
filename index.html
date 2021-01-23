@@ -119,7 +119,7 @@
               // Load top ten switch hitters.
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D where H = 'Yes' and E like '%ICMR%' ",
+                query: "select C,B,F,E,D where E like '%ICMR%' ",
                 fetchSize: 5
               });
             </script>
@@ -136,7 +136,7 @@
               // Load top ten switch hitters.
               $('#media-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D,G where E like '%TOI%' ",     
+                query: "select C,B,F,E,D,G where H = 'Yes' and E like '%TOI%' ",     
                 fetchSize: 5
               });
             </script>
