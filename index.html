@@ -136,7 +136,7 @@
               // Load top ten switch hitters.
               $('#media-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D,G where H = 'Yes' ",     
+                query: "select C,B,F,E,D,G,H where H = 'Yes' and E like '%TOI%",     
                 fetchSize: 5
               });
             </script>
