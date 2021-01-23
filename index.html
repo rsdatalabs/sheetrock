@@ -88,7 +88,7 @@
               <ol id="hr">
                 <script id="hr-template" type="text/x-handlebars-template">
                   <li>
-                  <strong>{{cells.City}}</strong> {{cells.Disease}}, {{cells.Date}},{{cells.Brief}}
+                  <strong>{{cells.City}}</strong> {{cells.Disease}}, {{cells.Date}},{{cells.Brief}}, {{cells.URL}}
                   </li>
                 </script>
               </ol>
@@ -99,7 +99,7 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                query: "select B,C,D,F where F like '%Vaccine%' order by D desc",
+                query: "select B,C,D,F,G where F like '%Vaccine%' order by D desc",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
               });
