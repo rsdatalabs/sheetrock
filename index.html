@@ -99,7 +99,7 @@
               // Load top five HR leaders.
               $('#hr').sheetrock({
                 url: mySpreadsheet,
-                query: "select B,C,D,F,G where F like '%Vaccine%' order by D desc",
+                query: "select B,C,D,F,G where F like '%Vaccine%' ",
                 fetchSize: 5,
                 rowTemplate: HRTemplate
               });
@@ -119,7 +119,7 @@
               // Load top ten switch hitters.
               $('#switch-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D where E like '%ICMR%' order by B desc",
+                query: "select C,B,F,E,D where E like '%ICMR%' ",
                 fetchSize: 5
               });
             </script>
@@ -136,8 +136,9 @@
               // Load top ten switch hitters.
               $('#media-hitters').sheetrock({
                 url: mySpreadsheet,
-                query: "select C,B,F,E,D,G where E like '%TOI%' order by B desc",
+                query: "select C,B,F,E,D,G where E like '%TOI%' ",     
                 fetchSize: 5
+                 <!--order by B desc-->
               });
             </script>
           </div>
